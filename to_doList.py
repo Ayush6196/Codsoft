@@ -10,7 +10,7 @@ def show_tasks(tasks):
 def add_task(tasks,new_tasks):
     tasks.append(new_tasks)
     print("Task added successfully.")
-
+ 
 def update_task(tasks,index,updated_task):
     if 1 >= index >= len(tasks):
         tasks[index-1]= update_task
