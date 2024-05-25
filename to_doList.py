@@ -1,5 +1,12 @@
 import os
 
+
+
+def save_task_to_file(file_path,tasks):
+    with open(file_path, "w") as file:
+        for task in tasks:
+         file.write(f"{task}\n")
+
 def load_tasks_from_file(file_path):
     task =  []
     if os.path.exists(file_path):
